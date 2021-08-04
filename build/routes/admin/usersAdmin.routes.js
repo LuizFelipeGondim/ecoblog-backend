@@ -16,7 +16,7 @@ const upload = multer_1.default(upload_1.default);
 UsersRouter.post('/', async (request, response) => {
     try {
         const { first_name, last_name, email, password, city, uf, whatsapp, is_staff } = request.body;
-        const avatar = 'http://localhost:3333/files/unknown.png';
+        const avatar = 'https://ecoblog-backend.herokuapp.com/files/unknown.png';
         const createUser = new CreateUserService_1.default();
         const user = await createUser.execute({
             first_name,

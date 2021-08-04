@@ -26,7 +26,7 @@ class UpdateUserAvatarService {
                 }
             }
         }
-        user.avatar = `http://localhost:3333/files/${avatarFilename}`;
+        user.avatar = `https://ecoblog-backend.herokuapp.com/files/${avatarFilename}`;
         await usersRepository.save(user);
         return user;
     }

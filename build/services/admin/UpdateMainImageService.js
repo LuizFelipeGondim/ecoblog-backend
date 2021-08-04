@@ -24,7 +24,7 @@ class UpdateMainImageService {
                 await fs_1.default.promises.unlink(publicationImageFilePath);
             }
         }
-        publication.main_image = `http://localhost:3333/files/${imageFilename}`;
+        publication.main_image = `https://ecoblog-backend.herokuapp.com/files/${imageFilename}`;
         await publicationsRepository.save(publication);
         return publication;
     }

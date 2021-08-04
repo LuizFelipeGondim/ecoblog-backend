@@ -6,7 +6,6 @@ import CreateUserService from '../services/CreateUserService'
 
 
 const usersRouter = Router()
-const upload = multer(uploadConfig)
 
 usersRouter.post('/', async (request, response) => {
     try {

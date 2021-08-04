@@ -4,11 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
-const multer_1 = __importDefault(require("multer"));
-const upload_1 = __importDefault(require("../config/upload"));
 const CreateUserService_1 = __importDefault(require("../services/CreateUserService"));
 const usersRouter = express_1.Router();
-const upload = multer_1.default(upload_1.default);
 usersRouter.post('/', async (request, response) => {
     try {
         const { first_name, last_name, email, password, city, uf, whatsapp } = request.body;

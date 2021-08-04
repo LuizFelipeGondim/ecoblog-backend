@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const typeorm_1 = require("typeorm");
+require("dotenv").config();
 const rootDir = process.env.NODE_ENV === "development" ?
     "src" :
     "build";
