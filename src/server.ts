@@ -1,5 +1,5 @@
 import 'reflect-metadata'
-require("dotenv").config(); 
+require("dotenv").config() 
 import express from 'express'
 import cors from 'cors'
 import routes from './routes'
