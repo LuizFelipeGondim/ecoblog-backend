@@ -105,7 +105,7 @@ dist
 
 node_modules
 
-yarn.lock
+#yarn.lock
 
 database.sqlite
 
