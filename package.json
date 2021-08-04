@@ -6,7 +6,7 @@
 	"scripts": {
 		"build": "tsc",
 		"dev:server": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-		"start": "tsnd ./build/server.js",
+		"start": "ts-node build/server",
 		"typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
 	},
 	"keywords": [],
