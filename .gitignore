@@ -111,5 +111,5 @@ server/tmp/*
 !server/tmp/unknown.png
 
 ormconfig.json
-.env
+
 
